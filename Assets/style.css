@@ -1,28 +1,82 @@
 * {
   font-family: 'Tourney', sans-serif;
+  font-weight: bolder;
+  text-decoration:double;
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-:root {
-  
-}
+:root {}
 
 .body {
-
+  background: url("./images/background.avif");
+  background-position: center;
+  background-size: cover;
 }
 
 .pairs {
+  background-image: url(./images/currency.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  background-color:  #F6F0E5;
+  color: black;
+  font-weight: bolder;
+} 
 
+.header{
+  max-width: 960px;
+  text-align-last: center;
+  background-position: center;
+  background-size: cover;
+  color: #F6F0E5;
+  text-shadow: 1px 1px 1px #F6F0E5;
 }
 
-.cards {
-  max-width: 800px;
+
+
+
+.cardsP {
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  background-size:auto;
+  background-color:  #F6F0E5;
+  max-width: 960px;
   text-align: center;
+  color: black;
 }
+  
+.cardsC {
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  max-width: 960px;
+  text-align: center;
+  background-color:  #F6F0E5;
+  color: black;
+  text-decoration: solid;
+}
+
+.cardsT {
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  max-width: 960px;
+  text-align: center;
+  background-color:  #F6F0E5;
+  color: black;
+  text-decoration: solid;
+}
+
+
 
 .cards2 {
+  /* background: url("./images/currency4.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-color: #F6F0E5;
+
 
 }
 
@@ -34,3 +88,14 @@
 .skew:hover {
   transform: skew(-3deg)
 }
+
+.footer {
+  max-width: 960px;
+  text-align-last: center;
+  /* background: url("./images/suan.jpeg"); */
+  background-position: center;
+  background-size: cover;
+  color: #F6F0E5;
+}
+
+/* background-color: #000033 ; */

@@ -18,47 +18,42 @@
 </head>
 
 <body class="body">
-  <div class="container text-center border border-1 rounded animate__animated animate__backInDown cards">
-    <div class="row p-1 align-items-center">
-      <h1>UtorTrip</h1>
+  <div class="container text-center border border-1 rounded animate__animated animate__backInDown header">
+    <div class="row p-3 align-items-center">
+      <h1>Utor   Trip</h1>
     </div>
   </div>
-  <div class="container mt-3 text-center border border-1 rounded animate__animated animate__backInLeft cards">
+  <div class="container mt-3 text-center border border-1 rounded animate__animated animate__backInLeft cardsP">
     <div class="row p-1 align-items-center">
-      <div class="col-sm-3 p-1">
-        Currency Pairs
+      <div class="col-sm-3 p-1 align-items-center">
+        <h2>&#36; &euro; &#163;</h2>
       </div>
       <div class="col-sm-9 p-1 border border-1 rounded pairs">
         <div class="row align-items-center">
           <div class="col-4 col-sm-6">
-            CAD/EUR 0.68
+            <h6>CAD/EUR 0.68</h6>
           </div>
           <div class="col-4 col-sm-6">
-            CAD/GBP 0.63
+            <h6>CAD/GBP 0.63</h6>
           </div>
           <div class="col-4 col-sm-6">
-            CAD/USD 0.72
+            <h6>CAD/USD 0.72</h6>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container mt-3 text-center border border-1 rounded animate__animated animate__backInRight cards">
+  <div class="container mt-3 text-center border border-1 rounded animate__animated animate__backInRight cardsC">
     <div class="row p-1 align-items-center">
       <button type="button" class="btn mb-1 btn-light">Convert</button>
       <div class="col-sm-9 p-1 border border-1 rounded cards2">
         <div class="row align-items-center">
-          <div class="input-group mb-2">
-            <span class="input-group-text">$</span>
+          <div class="input-group dropup mb-2">
+            <span class="input-group-text" id="targetCurrencyCode"> </span>
             <input type="text" class="form-control skew" placeholder="Amount to Covert"
               aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
-          </div>
-          <div class="input-group dropup">
-            <input type="text" class="form-control skew" aria-label="Text input with dropdown button"
-              placeholder="Converted Amount">
             <button class="btn btn-light dropdown-toggle border border-1" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">To</button>
+              aria-expanded="false">From</button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -69,17 +64,21 @@
               <li><a class="dropdown-item" href="#">Separated link</a></li>
             </ul>
           </div>
+          <div class="input-group dropup">
+            <span class="input-group-text">CAD</span>
+            <input type="text" class="form-control skew" aria-label="Text input with dropdown button" placeholder="Converted Amount">
+          </div> 
         </div>
       </div>
     </div>
   </div>
-  <div class="container mt-3 text-center border border-1 rounded animate__animated animate__backInLeft cards">
+  
+  <div class="container mt-3 text-center border border-1 rounded animate__animated animate__backInLeft cardsT">
     <div class="row p-1 align-items-center">
       <button type="button" class="btn mb-1 btn-light">Translate</button>
       <div class="col-sm-9 p-1 border border-1 rounded cards2">
         <div class="row align-items-center">
-          <div class="input-group mb-2">
-
+          <div class="input-group dropup mb-2">
             <input type="text" class="form-control skew" aria-label="Text input with dropdown button"
               placeholder="Input Text">
             <button class="btn btn-light dropdown-toggle border border-1"  type="button"  data-bs-toggle="dropdown"
@@ -94,8 +93,7 @@
               <li><a class="dropdown-item" href="#">Separated link</a></li>
             </ul>
           </div>
-          <div class="input-group">
-
+          <div class="input-group dropup">
             <input type="text" class="form-control skew" aria-label="Text input with dropdown button"
               placeholder="Translation">
             <button class="btn btn-light dropdown-toggle border border-1" type="button" data-bs-toggle="dropdown"
@@ -114,7 +112,7 @@
       </div>
     </div>
   </div>
-  <div class="container mt-3 text-center border border-1 rounded footer animate__animated animate__backInUp cards">
+  <div class="container mt-3 text-center border border-1 rounded footer animate__animated animate__backInUp footer">
     <div class="row p-1 align-items-center">
       <p>&copy;Copyright UtorTrip 2023</p>
     </div>
