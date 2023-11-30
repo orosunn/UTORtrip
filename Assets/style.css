@@ -23,7 +23,7 @@
 }
 /* highlight buttons on hover */
 .highlight:hover {
-  box-shadow: inset 2px 2px 2px burlywood;
+  box-shadow: inset 3px 3px 3px burlywood;
 }
 
 /* Secondary boxes for depth effect */
@@ -44,6 +44,7 @@
   transform-box:view-box;
   transform:translateY(15%)scaleY(125%)translate(-1%);
 }
+
 /* Key currency pairs on top banner inner box */
 .pairs {
   background-image: url(./images/currency3.jpg);
@@ -63,8 +64,6 @@
   max-width: 960px;
   text-align: center;
   color: black;
-  font-weight: bolder;
- 
 }
 /* currency input/output boxes */
 .cardsC {
@@ -111,4 +110,11 @@
   background-size: cover;
   color: #F6F0E5;
 }
+
+#Hbutton {
+  color: #F6F0E5;
+  transform:;
+}
+
+
 
