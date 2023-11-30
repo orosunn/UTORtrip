@@ -1,6 +1,6 @@
+/* universal selectors */
 * {
   font-family: 'Tourney', sans-serif;
-  text-decoration:double;
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -12,7 +12,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .header{
   max-width: 960px;
   text-align-last: center;
@@ -21,6 +20,7 @@
   color: #F6F0E5;
   text-shadow: 1px 1px 1px #06180C;
 }
+
 /* highlight buttons on hover */
 .highlight:hover {
   box-shadow: inset 3px 3px 3px burlywood;
@@ -32,13 +32,11 @@
   transform-box:view-box;
   transform: translateY(25%)scaleY(150%)translate(-3%);
 }
-
 .three {
   transition: all;
   transform-box:view-box;
   transform:translateY(15%)scaleY(110%)translate(-1%);
 }
-
 .four {
   transition: all;
   transform-box:view-box;
@@ -96,13 +94,22 @@
 /* skews some text and inputs when hover the mouse over */
 .skew {
   transition: all;
-  transition-delay: 7ms;
+  transition-delay: 50ms;
 }
-
 .skew:hover {
   transform: skew(-3deg)
 }
 
+/* blinks exchange and translate buttons */
+.blinking{
+  /* text-shadow: 1px 1px 1px white; */
+  animation:blinkingText 5.2s infinite;
+}
+@keyframes blinkingText{
+  100%{     color: #000;    }
+  49%{    color: white; }
+  50%{   color: white;    }
+}
 .footer {
   max-width: 960px;
   text-align-last: center;
@@ -110,10 +117,9 @@
   background-size: cover;
   color: #F6F0E5;
 }
-
 #Hbutton {
-  color: #F6F0E5;
-  transform:;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
