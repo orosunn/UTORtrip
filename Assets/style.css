@@ -1,28 +1,17 @@
 * {
   font-family: 'Tourney', sans-serif;
-  font-weight: bolder;
   text-decoration:double;
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-:root {}
-
 .body {
   background: url("./images/background.avif");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.pairs {
-  background-image: url(./images/currency.jpg);
-  background-blend-mode:soft-light;
-  background-position: center;
-  background-color:  #F6F0E5;
-  color: black;
-  font-weight: bolder;
-} 
 
 .header{
   max-width: 960px;
@@ -30,30 +19,64 @@
   background-position: center;
   background-size: cover;
   color: #F6F0E5;
-  text-shadow: 1px 1px 1px #F6F0E5;
+  text-shadow: 1px 1px 1px #06180C;
 }
 
+h1 {
+  transition: all;
+  transform-box:view-box;
+  transform: translateY(30%)scaleY(100%)translate(-2%);
+}
 
+.highlight:hover {
+  box-shadow: inset 1px 1px 1px #198754;
+}
 
+.two {
+  transition: all;
+  transform-box:view-box;
+  transform: translateY(15%)scaleY(150%)translate(-2%);
+}
+
+.three {
+  transition: all;
+  transform-box:view-box;
+  transform:translateY(15%)scaleY(110%)translate(-1%);
+}
+
+.four {
+  transition: all;
+  transform-box:view-box;
+  transform:translateY(15%)scaleY(95%)translate(-1%);
+}
 
 .cardsP {
-  background-image: url(./images/currency3.jpg);
   background-blend-mode:soft-light;
   background-position: center;
   background-size:auto;
-  background-color:  #F6F0E5;
   max-width: 960px;
   text-align: center;
-  color: black;
+  color: #F6F0E5;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px #198754;
 }
-  
-.cardsC {
+
+.pairs {
   background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  background-color:  #F6F0E5;
+  color: black;
+  text-shadow: 1px 1px 1px green;
+  font-weight: bolder;
+} 
+
+.cardsC {
+
   background-blend-mode:soft-light;
   background-position: center;
   max-width: 960px;
   text-align: center;
-  background-color:  #F6F0E5;
   color: black;
   text-decoration: solid;
 }
@@ -69,15 +92,15 @@
   text-decoration: solid;
 }
 
-
+.push {
+  background-color: #EBF9EB ;
+}
 
 .cards2 {
   /* background: url("./images/currency4.jpg"); */
   background-position: center;
   background-size: cover;
   background-color: #F6F0E5;
-
-
 }
 
 .skew {
@@ -92,7 +115,6 @@
 .footer {
   max-width: 960px;
   text-align-last: center;
-  /* background: url("./images/suan.jpeg"); */
   background-position: center;
   background-size: cover;
   color: #F6F0E5;
