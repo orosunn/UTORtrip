@@ -1,3 +1,4 @@
+/* universal selectors */
 * {
   font-family: 'Tourney', sans-serif;
   margin: 0%;
@@ -5,32 +6,118 @@
   box-sizing: border-box;
 }
 
-:root {
-  
-}
-
 .body {
-
+  background: url("./images/background.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header{
+  max-width: 960px;
+  text-align-last: center;
+  background-position: center;
+  background-size: cover;
+  color: #F6F0E5;
+  text-shadow: 1px 1px 1px #06180C;
 }
 
+/* highlight buttons on hover */
+.highlight:hover {
+  box-shadow: inset 3px 3px 3px burlywood;
+}
+
+/* Secondary boxes for depth effect */
+.two {
+  transition: all;
+  transform-box:view-box;
+  transform: translateY(25%)scaleY(150%)translate(-3%);
+}
+.three {
+  transition: all;
+  transform-box:view-box;
+  transform:translateY(15%)scaleY(110%)translate(-1%);
+}
+.four {
+  transition: all;
+  transform-box:view-box;
+  transform:translateY(15%)scaleY(125%)translate(-1%);
+}
+
+/* Key currency pairs on top banner inner box */
 .pairs {
-
-}
-
-.cards {
-  max-width: 800px;
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  background-color:  #F6F0E5;
+  color: black;
+  font-weight: bolder;
+} 
+/* currency pairs outer box */
+.cardsP {
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  background-size:auto;
+  background-color:  #F6F0E5;
+  max-width: 960px;
   text-align: center;
+  color: black;
 }
-
+/* currency input/output boxes */
+.cardsC {
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  max-width: 960px;
+  text-align: center;
+  background-color:  #F6F0E5;
+  color: black;
+  text-decoration: solid;
+}
+/* translation input/output boxes */
+.cardsT {
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  max-width: 960px;
+  text-align: center;
+  background-color:  #F6F0E5;
+  color: black;
+  text-decoration: solid;
+}
+/* inner cards within other boxes */
 .cards2 {
-
+  background-position: center;
+  background-size: cover;
+  background-color: #F6F0E5;
 }
-
+/* skews some text and inputs when hover the mouse over */
 .skew {
   transition: all;
-  transition-delay: 7ms;
+  transition-delay: 50ms;
 }
-
 .skew:hover {
   transform: skew(-3deg)
+}
+
+/* blinks exchange and translate buttons */
+.blinking{
+  /* text-shadow: 1px 1px 1px white; */
+  animation:blinkingText 5.2s infinite;
+}
+@keyframes blinkingText{
+  100%{     color: #000;    }
+  49%{    color: white; }
+  50%{   color: white;    }
+}
+.footer {
+  max-width: 960px;
+  text-align-last: center;
+  background-position: center;
+  background-size: cover;
+  color: #F6F0E5;
+}
+#Hbutton {
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
