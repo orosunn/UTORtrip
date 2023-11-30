@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Tourney:wght@100;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Tourney:wght@600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./Assets/style.css">
   </link>
@@ -18,15 +18,15 @@
 
 <body class="body">
   <div
-    class="container mt-3 text-center border border-1 border-white rounded footer animate__animated animate__backInUp footer">
-    <div class="row p-1 align-items-center skew">
+    class="container mt-1 text-center border border-1 border-white rounded footer animate__animated animate__backInDown footer">
+    <div class="row p-1 align-items-center">
       <div class="col p-1 border border-1 border-white rounded header three">
-        <button type="button" class="btn mb-1 skew" id="Hbutton">UtoTrip | Exchange & Translate</button>
+        <h5 class="mb-1" id="Hbutton fade">UtoTrip | Exchange & Translate</h5>
       </div>
     </div>
   </div>
   <div
-    class="container mt-3 text-center border border-2 border-white rounded  animate__animated animate__backInLeft cardsP">
+    class="container mt-2 text-center border border-2 border-white rounded  animate__animated animate__backInLeft cardsP">
     <div class="row p-1 align-items-center">
       <div class="row align-items-center">
         <div class="col-4 col-sm-6">
@@ -45,10 +45,10 @@
     </div>
   </div>
   <div
-    class="container mt-3 border border-1 border-white rounded animate__animated animate__backInDown header highlight">
+    class="container mt-3 border border-1 border-white rounded animate__animated animate__backInRight header highlight">
     <div class="row p-3 align-items-center skew">
       <div class="col p-1 border border-1 border-white rounded header two">
-        <button type="button" class="btn mb-1 skew" id="Ebutton">Exchange</button>
+        <button type="button" class="btn border border-1 mb-1 skew blinking" id="Ebutton">Exchange</button>
       </div>
     </div>
   </div>
@@ -79,10 +79,10 @@
     </div>
   </div>
   <div
-    class="container text-center mt-3 border border-1 border-white rounded animate__animated animate__backInDown header">
+    class="container text-center mt-3 border border-1 border-white rounded animate__animated animate__backInLeft header highlight">
     <div class="row p-3 align-items-center skew">
       <div class="col p-1 border border-1 border-white rounded header two">
-        <button type="button" class="btn mb-1 skew" id="Tbutton">Translate</button>
+        <button type="button" class="btn border border-1 mb-1 skew blinking" id="Tbutton">Translate</button>
       </div>
     </div>
   </div>
@@ -94,17 +94,17 @@
           <div class="input-group dropup mb-2">
             <input id="trTextInput" type="text" class="form-control skew" aria-label="Text input with dropdown button"
               placeholder="Input Text">
-            <select id="trLangInput" class="form-select" aria-label="Default select example">
-              <option selected>Languages</option>
-              <option value="fr">French</option>
-              <option value="ja">Japanese</option>
-              <option value="ru">Russian</option>
-              <option value="ko">Korean</option>
-              <option value="es">Spanish</option>
-            </select>
+              <select id="trLangInput" class="form-select" aria-label="Default select example">
+                <option selected>Languages</option>
+                <option value="fr">French</option>
+                <option value="ja">Japanese</option>
+                <option value="ru">Russian</option>
+                <option value="ko">Korean</option>
+                <option value="es">Spanish</option>
+              </select>
           </div>
           <div class="input-group dropup">
-            <input type="text" class="form-control skew" aria-label="Text input with dropdown button"
+            <input id="trOutput" type="text" class="form-control skew" aria-label="Text input with dropdown button"
               placeholder="Translation">
           </div>
         </div>
@@ -112,7 +112,7 @@
     </div>
   </div>
   <div
-    class="container mt-3 text-center border border-1 border-white rounded footer animate__animated animate__backInUp footer highlight">
+    class="container mt-3 text-center border border-1 border-white rounded footer animate__animated animate__backInUp footer">
     <div class="row p-1 align-items-center">
       <div class="col p-1 border border-1 border-white rounded header three">
         <button type="button" class="btn mb-1" id="symbols">&copy;2023</button>
@@ -126,50 +126,5 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="./Assets/script.js"></script>
 </body>
-
-<!-- <button class="btn btn-light dropdown-toggle border border-1 border-white" type="button"
-data-bs-toggle="dropdown" aria-expanded="false">From</button>
-<ul class="dropdown-menu dropdown-menu-end">
-<li><a class="dropdown-item" href="#">Action</a></li>
-<li><a class="dropdown-item" href="#">Another action</a></li>
-<li><a class="dropdown-item" href="#">Something else here</a></li>
-<li>
-  <hr class="dropdown-divider">
-</li>
-<li><a class="dropdown-item" href="#">Separated link</a></li>
-</ul>
-</div> -->
-
-<!-- <div class="input-group dropup mb-2">
-  <input type="text" class="form-control skew" aria-label="Text input with dropdown button"
-    placeholder="Input Text">
-  <button class="btn btn-light dropdown-toggle border border-1 border-white"  type="button"  data-bs-toggle="dropdown"
-    aria-expanded="false">From</button> 
-  <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li>
-      <hr class="dropdown-divider">
-    </li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div> -->
-
-<!-- <div class="input-group dropup">
-  <input type="text" class="form-control skew" aria-label="Text input with dropdown button"
-    placeholder="Translation">
-  <button class="btn btn-light dropdown-toggle border border-1" type="button" data-bs-toggle="dropdown"
-    aria-expanded="false">To</button>
-  <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li>
-      <hr class="dropdown-divider">
-    </li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div> -->
 
 </html>
