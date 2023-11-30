@@ -48,7 +48,7 @@
     class="container mt-3 border border-1 border-white rounded animate__animated animate__backInRight header highlight">
     <div class="row p-3 align-items-center skew">
       <div class="col p-1 border border-1 border-white rounded header two">
-        <button type="button" class="btn border border-1 mb-1 skew blinking" id="Ebutton">Exchange</button>
+        <button type="submit" class="btn border border-1 mb-1 skew blinking" onclick="exchangeCurrency(event)" id="Ebutton">Exchange</button>
       </div>
     </div>
   </div>
@@ -61,18 +61,19 @@
             <span class="input-group-text" id="targetCurrencyCode"> </span>
             <input id="amount" type="text" class="form-control skew " placeholder="Amount to Convert"
               aria-label="Amount (to the nearest dollar)">
-            <select class="form-select" aria-label="Default select example">
+            <select id="currency" type="text" class="form-select" aria-label="Default select example">
               <option selected>Currencies</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="JPY">JPY</option>
+              <option value="MXN">MXN</option>
+              <option value="KRW">KRW</option>
             </select>
           </div>
           <div class="input-group dropup">
             <span class="input-group-text">CAD</span>
-            <input type="text" class="form-control skew" aria-label="Text input with dropdown button" placeholder="Converted Amount">
+            <input id="exchangedAmount" type="text" class="form-control skew" aria-label="Text input with dropdown button" placeholder="Converted Amount">
           </div> 
         </div>
       </div>

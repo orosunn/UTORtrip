@@ -14,7 +14,6 @@ function exchangeCurrency (event){
       return response.json();
       })
       .then(function (data){
-        console.log(data);
         
         var CADvalue = data.data.CAD.value;
         console.log('CAD Value:', CADvalue);
@@ -28,5 +27,7 @@ function exchangeCurrency (event){
         console.log('Final Value:', roundedValue);
   
         document.getElementById('exchangedAmount').value = roundedValue;
+        
+        console.log(data);
     })
   }
