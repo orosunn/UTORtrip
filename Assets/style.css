@@ -21,21 +21,16 @@
   color: #F6F0E5;
   text-shadow: 1px 1px 1px #06180C;
 }
-
-h1 {
-  transition: all;
-  transform-box:view-box;
-  transform: translateY(30%)scaleY(100%)translate(-2%);
-}
-
+/* highlight buttons on hover */
 .highlight:hover {
-  box-shadow: inset 1px 1px 1px #198754;
+  box-shadow: inset 2px 2px 2px burlywood;
 }
 
+/* Secondary boxes for depth effect */
 .two {
   transition: all;
   transform-box:view-box;
-  transform: translateY(15%)scaleY(150%)translate(-2%);
+  transform: translateY(25%)scaleY(150%)translate(-3%);
 }
 
 .three {
@@ -47,40 +42,42 @@ h1 {
 .four {
   transition: all;
   transform-box:view-box;
-  transform:translateY(15%)scaleY(95%)translate(-1%);
+  transform:translateY(15%)scaleY(125%)translate(-1%);
 }
-
-.cardsP {
-  background-blend-mode:soft-light;
-  background-position: center;
-  background-size:auto;
-  max-width: 960px;
-  text-align: center;
-  color: #F6F0E5;
-  font-weight: bolder;
-  text-shadow: 1px 1px 1px #198754;
-}
-
+/* Key currency pairs on top banner inner box */
 .pairs {
   background-image: url(./images/currency3.jpg);
   background-blend-mode:soft-light;
   background-position: center;
   background-color:  #F6F0E5;
   color: black;
-  text-shadow: 1px 1px 1px green;
   font-weight: bolder;
 } 
-
+/* currency pairs outer box */
+.cardsP {
+  background-image: url(./images/currency3.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  background-size:auto;
+  background-color:  #F6F0E5;
+  max-width: 960px;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+ 
+}
+/* currency input/output boxes */
 .cardsC {
-
+  background-image: url(./images/currency3.jpg);
   background-blend-mode:soft-light;
   background-position: center;
   max-width: 960px;
   text-align: center;
+  background-color:  #F6F0E5;
   color: black;
   text-decoration: solid;
 }
-
+/* translation input/output boxes */
 .cardsT {
   background-image: url(./images/currency3.jpg);
   background-blend-mode:soft-light;
@@ -91,18 +88,13 @@ h1 {
   color: black;
   text-decoration: solid;
 }
-
-.push {
-  background-color: #EBF9EB ;
-}
-
+/* inner cards within other boxes */
 .cards2 {
-  /* background: url("./images/currency4.jpg"); */
   background-position: center;
   background-size: cover;
   background-color: #F6F0E5;
 }
-
+/* skews some text and inputs when hover the mouse over */
 .skew {
   transition: all;
   transition-delay: 7ms;
@@ -120,4 +112,3 @@ h1 {
   color: #F6F0E5;
 }
 
-/* background-color: #000033 ; */
