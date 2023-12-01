@@ -10,25 +10,25 @@ document.addEventListener("DOMContentLoaded", function () {
            let CADkeyValue = data.data.CAD.value;
     
            let EURkeyValue = data.data.EUR.value;
-           let EURCADtranslation = EURkeyValue / CADkeyValue ;
+           let EURCADtranslation = EURkeyValue / CADkeyValue;
            let roundedEURCADtranslation = EURCADtranslation.toFixed(2);
            let EURkeyPairEl = document.getElementById('keyPairEUR');
            EURkeyPairEl.textContent = 'CAD/EUR ' + roundedEURCADtranslation;
     
            let GBPkeyValue = data.data.GBP.value;
-           let GBPCADtranslation = GBPkeyValue / CADkeyValue ;
+           let GBPCADtranslation = GBPkeyValue / CADkeyValue;
            let roundedGBPCADtranslation = GBPCADtranslation.toFixed(2);
            let GBPkeyPairEl = document.getElementById('keyPairGBP');
            GBPkeyPairEl.textContent = 'CAD/GBP ' + roundedGBPCADtranslation;
     
            let USDkeyValue = data.data.USD.value;
-           let USDCADtranslation = USDkeyValue / CADkeyValue ;
+           let USDCADtranslation = USDkeyValue / CADkeyValue;
            let roundedUSDCADtranslation = USDCADtranslation.toFixed(2);
            let USDkeyPairEl = document.getElementById('keyPairUSD');
            USDkeyPairEl.textContent = 'CAD/USD ' + roundedUSDCADtranslation;
     
            let JPYkeyValue = data.data.JPY.value;
-           let JPYCADtranslation = JPYkeyValue / CADkeyValue ;
+           let JPYCADtranslation = JPYkeyValue / CADkeyValue;
            let roundedJPYCADtranslation = JPYCADtranslation.toFixed(2);
            let JPYkeyPairEl = document.getElementById('keyPairJPY');
            JPYkeyPairEl.textContent = 'CAD/JPY ' + roundedJPYCADtranslation;
@@ -60,7 +60,7 @@ function exchangeCurrency (event){
         let CADvalue = data.data.CAD.value;
         console.log('CAD Value:', CADvalue);
         
-        let targetValue = data.data[targetCurrency].value  
+        let targetValue = data.data[targetCurrency].value;
         console.log('Target Value:', targetValue);
   
         let exchangedValue = (exchangeAmount / targetValue) * CADvalue;
@@ -77,21 +77,21 @@ function exchangeCurrency (event){
 
 
 let trText = document.getElementById('trTextInput');
-let trLang = document.getElementById('trLangInput')
-let trOutput = document.getElementById('trOutput')
-let trButton = document.getElementById('Tbutton')
+let trLang = document.getElementById('trLangInput');
+let trOutput = document.getElementById('trOutput');
+let trButton = document.getElementById('Tbutton');
 
 function translateText() {
 if (trLang.value == 'Languages') {
     return
 }
 else {
-console.log(trLang.value)
+console.log(trLang.value);
 
 let requestUrl = 'https://api.mymemory.translated.net/get?q=' + trText.value + '&langpair=' + trLang.value + '|en'
 fetch(requestUrl).then(res => res.json()).then(data => {
     console.log(requestUrl);
-    trOutput.value = data.responseData.translatedText
-});}}
+    trOutput.value = data.responseData.translatedText;
+});}};
 
-trButton.addEventListener('click', translateText)
+trButton.addEventListener('click', translateText);
