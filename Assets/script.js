@@ -80,8 +80,8 @@ fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_bT9axTw5RecXKkaSnVq
        let GBPkeyValue = data.data.GBP.value;
        let GBPCADtranslation = GBPkeyValue / CADkeyValue ;
        let roundedGBPCADtranslation = GBPCADtranslation.toFixed(2);
-       let keyPairEl = document.getElementById('keyPairGBP');
-       keyPairEl.textContent = 'CAD/GBP ' + roundedGBPCADtranslation;
+       let GBPkeyPairEl = document.getElementById('keyPairGBP');
+       GBPkeyPairEl.textContent = 'CAD/GBP ' + roundedGBPCADtranslation;
 
        let USDkeyValue = data.data.USD.value;
        let USDCADtranslation = USDkeyValue / CADkeyValue ;
