@@ -17,7 +17,7 @@
   text-align-last: center;
   background-position: center;
   background-size: cover;
-  color: #F6F0E5;
+  color: #000000;
   text-shadow: 1px 1px 1px #06180C;
 }
 
@@ -107,8 +107,8 @@
 }
 @keyframes blinkingText{
   100%{     color: #000;    }
-  49%{    color: white; }
-  50%{   color: white;    }
+  49%{    color: rgb(150, 150, 150); }
+  50%{   color: rgb(150, 150, 150);    }
 }
 .footer {
   max-width: 960px;
@@ -121,6 +121,18 @@
   color: white;
   text-shadow: 1px 1px 1px black;
 }
-
-
-
+#Ebutton{
+  background-color: whitesmoke;
+}
+#Tbutton{
+  background-color: whitesmoke;
+}
+#trLangInput:hover {
+  cursor: pointer;
+}
+#currency:hover {
+  cursor: pointer;
+}
+#symbols {
+ color: whitesmoke; 
+}
