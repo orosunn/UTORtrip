@@ -17,6 +17,12 @@ Developed by:
 - Tyler Wright, Github: orosunn
 - Myles George-Archibald, Github: mg-archie
 
+Technologies used: 
+- Bootstrap framework
+- Animate css
+- Currency api
+- My Memory api
+
 ### License
 The MIT License (MIT)
 
