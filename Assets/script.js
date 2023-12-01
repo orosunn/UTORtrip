@@ -1,3 +1,41 @@
+// Key Currency Pairs
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_bT9axTw5RecXKkaSnVqkpKL7wPqz5945rdMQxFaM')
+        .then(function (response){
+        return response.json();
+        })
+        .then(function (data){
+           let CADkeyValue = data.data.CAD.value;
+    
+           let EURkeyValue = data.data.EUR.value;
+           let EURCADtranslation = EURkeyValue / CADkeyValue ;
+           let roundedEURCADtranslation = EURCADtranslation.toFixed(2);
+           let EURkeyPairEl = document.getElementById('keyPairEUR');
+           EURkeyPairEl.textContent = 'CAD/EUR ' + roundedEURCADtranslation;
+    
+           let GBPkeyValue = data.data.GBP.value;
+           let GBPCADtranslation = GBPkeyValue / CADkeyValue ;
+           let roundedGBPCADtranslation = GBPCADtranslation.toFixed(2);
+           let GBPkeyPairEl = document.getElementById('keyPairGBP');
+           GBPkeyPairEl.textContent = 'CAD/GBP ' + roundedGBPCADtranslation;
+    
+           let USDkeyValue = data.data.USD.value;
+           let USDCADtranslation = USDkeyValue / CADkeyValue ;
+           let roundedUSDCADtranslation = USDCADtranslation.toFixed(2);
+           let USDkeyPairEl = document.getElementById('keyPairUSD');
+           USDkeyPairEl.textContent = 'CAD/USD ' + roundedUSDCADtranslation;
+    
+           let JPYkeyValue = data.data.JPY.value;
+           let JPYCADtranslation = JPYkeyValue / CADkeyValue ;
+           let roundedJPYCADtranslation = JPYCADtranslation.toFixed(2);
+           let JPYkeyPairEl = document.getElementById('keyPairJPY');
+           JPYkeyPairEl.textContent = 'CAD/JPY ' + roundedJPYCADtranslation;
+        });
+});
+    
+    
 //Currency Exchange Calculator
 
 
@@ -17,7 +55,8 @@ function exchangeCurrency (event){
       return response.json();
       })
       .then(function (data){
-        
+        console.log(data);
+
         let CADvalue = data.data.CAD.value;
         console.log('CAD Value:', CADvalue);
         
@@ -30,8 +69,6 @@ function exchangeCurrency (event){
         console.log('Final Value:', roundedValue);
   
         document.getElementById('exchangedAmount').value = roundedValue;
-        
-        console.log(data);
     });
 };
 
@@ -58,41 +95,3 @@ fetch(requestUrl).then(res => res.json()).then(data => {
 });}}
 
 trButton.addEventListener('click', translateText)
-
-
-// Key Currency Pairs
-
-
-document.addEventListener("DOMContentLoaded", function () {
-fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_bT9axTw5RecXKkaSnVqkpKL7wPqz5945rdMQxFaM')
-    .then(function (response){
-    return response.json();
-    })
-    .then(function (data){
-       let CADkeyValue = data.data.CAD.value;
-
-       let EURkeyValue = data.data.EUR.value;
-       let EURCADtranslation = EURkeyValue / CADkeyValue ;
-       let roundedEURCADtranslation = EURCADtranslation.toFixed(2);
-       let EURkeyPairEl = document.getElementById('keyPairEUR');
-       EURkeyPairEl.textContent = 'CAD/EUR ' + roundedEURCADtranslation;
-
-       let GBPkeyValue = data.data.GBP.value;
-       let GBPCADtranslation = GBPkeyValue / CADkeyValue ;
-       let roundedGBPCADtranslation = GBPCADtranslation.toFixed(2);
-       let GBPkeyPairEl = document.getElementById('keyPairGBP');
-       GBPkeyPairEl.textContent = 'CAD/GBP ' + roundedGBPCADtranslation;
-
-       let USDkeyValue = data.data.USD.value;
-       let USDCADtranslation = USDkeyValue / CADkeyValue ;
-       let roundedUSDCADtranslation = USDCADtranslation.toFixed(2);
-       let USDkeyPairEl = document.getElementById('keyPairUSD');
-       USDkeyPairEl.textContent = 'CAD/USD ' + roundedUSDCADtranslation;
-
-       let JPYkeyValue = data.data.JPY.value;
-       let JPYCADtranslation = JPYkeyValue / CADkeyValue ;
-       let roundedJPYCADtranslation = JPYCADtranslation.toFixed(2);
-       let JPYkeyPairEl = document.getElementById('keyPairJPY');
-       JPYkeyPairEl.textContent = 'CAD/JPY ' + roundedJPYCADtranslation;
-    });
-});
