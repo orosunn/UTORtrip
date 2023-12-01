@@ -12,9 +12,10 @@ This app was designed with a common scenario in mind. Being in a foreign country
 ![UTORtripSS](https://github.com/orosunn/UTORtrip/assets/150002611/db4e29ff-fcda-4d5c-ae92-95a705631b9f)
 
 ### Credits
-Developed by: Wesley Noble, Github: wrn007
-Tyler Wright, Github: orosunn
-Myles George-Archibald, Github: mg-archie
+Developed by: 
+- Wesley Noble, Github: wrn007
+- Tyler Wright, Github: orosunn
+- Myles George-Archibald, Github: mg-archie
 
 ### License
 The MIT License (MIT)
