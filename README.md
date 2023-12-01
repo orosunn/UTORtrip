@@ -9,7 +9,7 @@ Just visit "insert deployed link"
 ### Usage
 This app was designed with a common scenario in mind. Being in a foreign country and needing to look up what a street sign reads, or the value of a store item. Upon initialization users can check the current rates of key currency pairs below the header. The "Currencies" dropdown selector has a list of currencies that can be calculated in CAD. Enter the value of the currency and press the "Exchange" button to convert the value. The "Languages" drop down allows users to pick which language they would like to translate into english. Enter the words to be translated into english. Press the "Translate" button to output the translation.
 
-(assets/images/screenshot.png)![UTORtripSS](https://github.com/orosunn/UTORtrip/assets/150002611/db4e29ff-fcda-4d5c-ae92-95a705631b9f)
+![UTORtripSS](https://github.com/orosunn/UTORtrip/assets/150002611/db4e29ff-fcda-4d5c-ae92-95a705631b9f)
 
 ```
 
